@@ -1,14 +1,19 @@
 {
 	"name": "vite-react-ts-template",
 	"private": true,
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"type": "module",
+	"author": {
+		"name": "明远湖之鱼",
+		"email": "488548816@qq.com",
+		"url": "https://github.com/XC0703"
+	},
 	"scripts": {
 		"start": "pnpm run dev",
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"eslint": "eslint src/**/*.{ts,tsx}",
+		"eslint": "eslint --max-warnings=0",
 		"prettier": "prettier --write src/**/*.{ts,tsx,less}",
 		"prepare": "husky"
 	},
@@ -31,8 +36,14 @@
 		"eslint-plugin-react": "^7.32.2",
 		"husky": "^9.0.11",
 		"less": "^4.1.3",
+		"lint-staged": "^15.2.2",
 		"prettier": "^3.2.5",
 		"typescript": "^4.9.3",
 		"vite": "^4.2.0"
+	},
+	"lint-staged": {
+		"src/**/*.{ts,tsx}": [
+			"npm run eslint"
+		]
 	}
 }

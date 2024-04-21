@@ -1,1 +1,1 @@
-"npm run eslint && npm run prettier" 
+npx lint-staged
