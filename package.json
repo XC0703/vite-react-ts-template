@@ -13,7 +13,7 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"eslint": "eslint --max-warnings=0",
+		"eslint": "eslint --fix --max-warnings=0",
 		"prettier": "prettier --write src/**/*.{ts,tsx,less}",
 		"prepare": "husky"
 	},
