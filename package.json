@@ -10,7 +10,7 @@
 		"preview": "vite preview",
 		"eslint": "eslint src/**/*.{ts,tsx}",
 		"prettier": "prettier --write src/**/*.{ts,tsx,less}",
-		"postinstall": "npx husky install"
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"react": "^18.2.0",
@@ -34,11 +34,5 @@
 		"prettier": "^3.2.5",
 		"typescript": "^4.9.3",
 		"vite": "^4.2.0"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "npm run eslint && npm run prettier",
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-		}
 	}
 }
